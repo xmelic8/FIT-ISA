@@ -1,0 +1,29 @@
+--------------------------------------------
+Klient SIP
+-------------------------------------------- 
+Autor: Michal Melichar <xmelic17@stud.fit.vutbr.cz>
+Popis: Klient protokolu SIP 2.0, ktery se dokaze pripojit k serveru a autentizovat pomoci MD5 digest.
+
+Program odesila data z portu cislo: 32866
+
+------------------
+Spusteni programu:
+------------------
+$sipklient -p profiles.txt -m messages.txt
+-p profiles.txt => povinny parametr obsahujici registracni udaje
+                   - soubor profiles.txt muze obsahovat libovolny nazev
+-m messages.txt => nepovinny parametr obsahujici seznam adresatu a zprav odesilanych klientem
+                   - soubor messages.txt muze obsahovat libovolny nazev
+
+------------------
+Omezeni programu:
+------------------
+Program neprijma zpravy(MESSAGE) zaslane jinym klientem. 
+
+------------------
+Odevzdane soubory:
+------------------
+Readme
+manual.pdf
+Makefile
+sipklient.c
